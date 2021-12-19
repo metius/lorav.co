@@ -1,0 +1,10 @@
+@import "../../../sass/variables.scss";
+
+#sectionTitle {
+  // font-family: 'Major Mono Display', monospace;
+  // font-size: $menu-font-size;
+
+  border-top: $borderCorners;
+  padding-top: 0.1em;
+  margin: 0.3em 0.3em;
+}

@@ -1,0 +1,15 @@
+@import "../../sass/_variables";
+
+.footer {
+  padding-bottom: 1em;
+
+  & a {
+    &:hover {
+      color: $details-color;
+
+      & > .logo__text-detail {
+        color: $main-text-color;
+      }
+    }
+  }
+}

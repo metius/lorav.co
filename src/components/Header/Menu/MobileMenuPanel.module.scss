@@ -1,0 +1,71 @@
+@import "../../../sass/_variables";
+
+.mobileMenuPanel {
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  transition: transform 0.3s ease 0s;
+  position: fixed;
+  top: 0;
+  right: 0px;
+
+  // background-color: $details-color;
+  color: $main-bg-color;
+  width: 100%;
+  height: 100vh;
+  padding-top: .2em;
+  z-index: 1000;
+
+  display: flex;
+
+  &__show {
+    transform: translateX(0%);
+  }
+
+  &__hide {
+    transform: translateX(100%);
+  }
+
+  &__blur {
+    flex: 9;
+    height: 100%;
+    content: '';
+    
+    
+    // backdrop-filter: sepia(90%);
+  }
+
+  &__menu {
+    flex: 1;
+    height: 100%;
+    background-color: $details-color;
+  }
+}
+
+.navigation {
+  height: 100%;
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; 
+    padding: .5em 0 4em 0;
+  }
+
+  &__item {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -webkit-text-orientation: mixed;
+    letter-spacing: .2rem;
+
+    display: block;
+  }
+}
+
+.background {
+  filter: blur(4px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

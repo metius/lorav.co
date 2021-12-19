@@ -1,0 +1,22 @@
+@import "../../sass/variables.scss";
+
+.title {
+  // font-size: 3.5rem;
+  padding-bottom: .95em;
+  font-weight: 500;
+
+  &--form {
+    padding-bottom: .2em;
+  }
+  
+  &::after {
+    content: ".";
+    color: $details-color;
+    // font-size: 3.8rem;
+  }
+}
+
+.subtitle {
+  // font-size: 1.8rem;
+  padding-bottom: 1em;
+}

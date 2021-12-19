@@ -1,0 +1,52 @@
+@import '../../sass/variables';
+
+button {
+  appearance:none;
+  -webkit-appearance:none;
+}
+
+.btn {
+  appearance:none;
+  -webkit-appearance:none;
+  padding:.7em;
+  margin: 1em 0;
+  border:none;
+  background: $details-color;
+  color:$main-text-color;
+  font-weight:500;
+  border-radius:.5em;
+  width:100%;
+  cursor: pointer;
+
+  &:hover {
+    background: $details-color-hover;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px $main-text-color;
+  }
+
+  &:active {
+    color: $details-color;
+    background:$main-text-color;
+  }
+
+  &__homePage {
+    width: 10em;
+    // background: none;
+    border: $borderCorners;
+
+    &:hover {
+      background: $details-color;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  
+    &:active {
+      color: $details-color;
+      background:$main-text-color;
+    }
+  }
+}

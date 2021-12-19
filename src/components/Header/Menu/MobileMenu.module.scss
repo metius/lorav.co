@@ -1,0 +1,46 @@
+@import "../../../sass/_variables.scss";
+
+.menuText {
+  cursor: pointer;
+}
+
+.navigationBar {
+  cursor: pointer;
+
+  &__list {
+    display: flex;
+    // flex-direction: column;
+  }
+
+  &__item {
+    
+      &:not(:last-child) {
+      padding-right: .5em;
+      // padding-bottom: 1em;
+
+      &::after {
+        content: "⋅";
+        padding-left: .25em;
+      }
+    }
+
+    // & > a {
+    //   vertical-align: bottom;
+    //   line-height: 0;
+    // }
+  }
+
+  &__link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__closeBtn {
+    color: $details-color;
+    // padding-right: 1em;
+    padding-bottom: .5em;
+  }
+
+}

@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// this define what 1rem is 
+	font-size: 100%;	//1rem = 8px; 8px/16px = 50%;
+}
+
+body {
+	box-sizing: border-box;
+	@include background;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+p,
+li,
+h1,
+h2,
+h3
+h4 {
+	overflow-wrap: break-word;
+}
+
+::selection {
+	background-color: $main-text-color;
+	color: $details-color;
+}

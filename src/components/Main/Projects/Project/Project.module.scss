@@ -1,0 +1,125 @@
+@import "../../../../sass/variables.scss";
+@import "../../../../sass/_mixins.scss";
+
+.project {
+
+  // border: 1px solid rebeccapurple;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__image {
+    position: relative;
+    // padding-bottom: 100%;
+    margin: .5em 0;
+  }
+
+  & .project__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    position: absolute;
+    top: 0;
+    
+    // @include imgBorder;
+  }
+
+  & .project__image img:nth-of-type(1) {
+    // filter: grayscale(1) brightness(40%);
+  }
+
+  & .project__image img:nth-of-type(2) {
+    -webkit-clip-path: $eclipse-clip-start;
+    clip-path: $eclipse-clip-start;
+    transition: -webkit-clip-path 0.5s;
+    transition: clip-path 0.5s;
+    transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+  }
+
+  & .project__image:hover img:nth-of-type(2) {
+    -webkit-clip-path: $eclipse-clip-end;
+    clip-path: $eclipse-clip-end;
+  }
+
+  // &__content {
+  //   font-size: 1.6rem;
+  // }
+
+  &__description {
+    font-weight: 300;
+  }
+
+  &__viewPage.project__viewPage {
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .8em 0 .5em 0;
+    display: block;
+  }
+}
+
+
+// .projects-grid {
+//   display: grid;
+//   // grid-template-columns: repeat(1, 1fr);
+//   grid-template-columns: repeat(auto-fill, minmax(8.5em, 1fr));
+//   width: 100%;
+//   grid-gap: 2.5em;
+//   justify-content: space-around;
+
+//   &__item {
+//     // border: 1px solid green;
+//   }
+
+//   &__image {
+//     position: relative;
+//     padding-bottom: 100%;
+//     margin: .5em 0;
+
+//   }
+  
+//   & .projects-grid__image img {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//     left: 0;
+//     position: absolute;
+//     top: 0;
+    
+//     @include imgBorder;
+//   }
+
+//   & .projects-grid__image img:nth-of-type(1) {
+//     filter: grayscale(1) brightness(40%);
+//   }
+
+//   & .projects-grid__image img:nth-of-type(2) {
+//     -webkit-clip-path: $eclipse-clip-start;
+//     clip-path: $eclipse-clip-start;
+//     transition: -webkit-clip-path 0.5s;
+//     transition: clip-path 0.5s;
+//     transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+//   }
+
+//   & .projects-grid__image:hover img:nth-of-type(2) {
+//     -webkit-clip-path: $eclipse-clip-end;
+//     clip-path: $eclipse-clip-end;
+//   }
+
+//   &__content {
+//     font-size: 1.6rem;
+//   }
+
+//   &__link.projects-grid__link {
+//     font-weight: 600;
+//     text-decoration: underline;
+//     text-transform: uppercase;
+//     cursor: pointer;
+//     padding: .8em 0 .5em 0;
+//     display: block;
+//   }
+// }
+

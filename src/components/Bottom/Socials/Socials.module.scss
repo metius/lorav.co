@@ -1,0 +1,38 @@
+@import "../../../sass/_variables.scss";
+@import "../../../sass/mixins";
+
+.socialsVertical {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  border-left: $borderCorners;
+  padding-left: .3em;
+  margin: .3em .3em;
+}
+
+.socialsHorizontal {
+  width: 100%;
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}
+
+.list {
+  display: flex;
+
+  &__vertical {
+    flex-direction: column;
+  }
+
+  &__horizontal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1em;
+  }
+}
+
+.item__vertical:not(:last-child) {
+  padding-bottom: .5em;
+}

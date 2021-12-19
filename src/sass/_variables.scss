@@ -1,0 +1,47 @@
+//Colors
+//Dark theme
+// $main-bg-color: rgb(0,0,0);
+// $background-gradient: radial-gradient(circle, #222222, #1b1b1b, #151515, #0c0c0c, #000000);
+// $main-bg-color-trans: rgba(255,255,255, .1);
+// $main-text-color: rgb(255,255,255);
+// $details-color: rgb(222,26,26);
+// $details-color-hover: rgba(222,26,26,.5);
+// $header-shadow-color: rgba(0, 0, 0, 0.4);
+
+// $logo-blink-1: rgb(255,255,255);
+// $logo-blink-2: rgb(222,26,26);
+
+//Light theme
+$main-bg-color: rgb(255,255,255);
+$background-gradient: radial-gradient(circle, #ffffff, #f6f6f6, #eeeeee, #e5e5e5, #dddddd);
+$main-bg-color-trans: rgba(0,0,0, .1);
+$main-text-color: rgb(0,0,0);
+$details-color: rgb(179, 86, 133);
+$details-color-hover: rgba(179, 86, 133, .5);
+$header-shadow-color: rgba(0, 0, 0, 0.4);
+
+$logo-blink-1: rgb(255,255,255);
+$logo-blink-2: rgb(255,255,255);
+//test test
+
+//Others Variables
+$borderCorners: .15em solid $details-color;
+//Image transition
+
+/* eclipse transition */
+$eclipse-clip-start: ellipse(0 0 at 0 100%); 
+$eclipse-clip-end: ellipse(150% 150% at 0 100%);
+
+//FONT
+// $default-font-size: 1.6rem;
+$default-font-size: 1rem;
+// $menu-font-size: 1.9rem;
+$menu-font-size: 1.4rem;
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop

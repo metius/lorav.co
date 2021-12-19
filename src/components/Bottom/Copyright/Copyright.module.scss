@@ -1,0 +1,18 @@
+@import "../../../sass/_variables.scss";
+
+.copyright {
+  z-index: 10;
+
+  border-bottom: $borderCorners;
+  // padding-bottom: .5em;
+  margin-bottom: .2em;
+
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: .2rem;
+  text-align: end;
+}
+
+.text__last {
+  letter-spacing: .3rem;
+}

@@ -1,0 +1,38 @@
+// .about {// }
+
+.content {
+  // max-width: 30em;
+
+  @media (min-width:600px) {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+  }
+
+  &Text {
+    margin-bottom: 2em;
+  }
+
+  &Img {
+    text-align: center;
+    margin: 0 auto;
+
+    position: relative;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border-radius: 5%;
+
+    @media (min-width:600px) {
+      width: 15em;
+      height: 15em;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+
+      filter: grayscale(100%);
+    }
+  }
+}

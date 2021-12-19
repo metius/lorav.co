@@ -1,0 +1,38 @@
+@import "../../../sass/variables";
+
+.form {
+  width: 100%;
+  max-width: 20em;
+}
+
+.item {
+  
+  & > * {
+    background: $main-bg-color-trans;
+    border: none;
+    color: $main-text-color;
+    // border-bottom: 1px solid $main-text-color;
+    min-width: 100%;
+    border-radius: .5em;
+    padding: .8em .4em;
+    // box-shadow:0 0 15px 4px rgba(255,255,255,0.06);
+
+    &:focus {
+      outline:none !important;
+      background: rgba(255,255,255,.2);
+    }
+
+    &:active {
+      outline:none !important
+    }
+  }
+  
+  & input {
+    margin-bottom: 1em;
+  }
+
+  & textarea {
+    margin-top: .5em;
+    resize: vertical;
+  }
+}

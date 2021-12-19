@@ -1,0 +1,16 @@
+@import "../../sass/_mixins.scss";
+
+.sides {
+  display: none;
+
+  @include for-size(desktop-up) {
+    padding: .5em 1em; 
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
