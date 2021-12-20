@@ -26,7 +26,7 @@ const Socials = ({listDirection}) => {
     <ul className={`${styles.list} ${listDirection === 'horizontal' ? styles.list__horizontal : styles.list__vertical}`}>
       {
         socialLinks.map((social, id) => 
-          <li className={`${listDirection === 'horizontal' ? styles.item__horizontal : styles.item__vertical }`} key={`${id}__${social.name}`}>
+          <li className={`${listDirection === 'horizontal' ? null : styles.item__vertical }`} key={`${id}__${social.name}`}>
             <a href={social.link} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon 
                 icon={social.icon}

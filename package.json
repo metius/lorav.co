@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "dev": "gatsby develop -H 0.0.0.0 -p 8000",
+    "dev": "gatsby develop -H 0.0.0.0 -p 8765", 
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -34,7 +34,6 @@
     "gatsby-transformer-sharp": "^4.2.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.1",
-    "react-animation": "^1.2.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   }

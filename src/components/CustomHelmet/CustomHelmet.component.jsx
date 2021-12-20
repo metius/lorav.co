@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 const CustomHelmet = () => 
   <Helmet>
-    <title>Home | mattiaV.dev</title>
+    <title>Home | lorav.co</title>
     
     {/* <!-- Google Fonts -->  */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />

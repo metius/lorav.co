@@ -21,4 +21,8 @@ header {
   @include for-size(desktop-up) {
     padding: .5em 1em; 
   }
+
+  & > * {
+    font-size: 1.2em;
+  }
 }

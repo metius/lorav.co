@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import * as styles from './DesktopMenu.module.scss';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../../../utils/font-awesome';
 
-const DesktopMenu = ({menuItems}) => {
-  return(<nav className={styles.navigationBar} >
+const DesktopMenu = ({menuItems}) => 
+  <nav>
     <ul className={styles.navigationBar__list}>
       {
         menuItems.map((item, id) => 
@@ -16,8 +15,6 @@ const DesktopMenu = ({menuItems}) => {
         </li>
       )}
     </ul>
-  </nav>)
-}
-
+  </nav>
 
 export default DesktopMenu;

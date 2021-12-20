@@ -4,7 +4,7 @@ import * as styles from "./Footer.module.scss";
 
 const Footer = () => 
   <footer className={styles.footer}>
-    <a href="#">
+    <a href="https://github.com/metius" target="_blank" rel="noopener noreferrer">
       Designed & Built by 
         {/* <span className=logo>mattia</span><span className="logo logo__text-detail">V.</span> */}
         <Logo size='small' />

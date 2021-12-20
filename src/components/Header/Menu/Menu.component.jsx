@@ -3,8 +3,6 @@ import * as styles from './Menu.module.scss';
 import MobileMenu from "./MobileMenu.component";
 import DesktopMenu from "./DesktopMenu.component";
 
-const isBrowser = typeof window !== undefined;
-
 const Menu = () => {
 
   const mobileBreakpoint = 1200;
