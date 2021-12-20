@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "dev": "gatsby develop -H 0.0.0.0 -p 8765", 
+    "dev": "gatsby develop -H 0.0.0.0 -p 8765",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -36,5 +36,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@netlify/plugin-gatsby": "^1.0.3"
   }
 }
